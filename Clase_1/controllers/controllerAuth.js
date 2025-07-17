@@ -13,13 +13,16 @@ const registerUser = async (req, res) => {
   if (!cellPhone || !Age) {
     return res.status(400).json({ message: "Debe ingresar un numero de celular y la edad" });
   }
+  if (password.length < 6) {
+    return res.status(400).json({ message: "La contraseña debe tener al menos 6 caracteres" });
+  }
 
   try {
-    const userExist = await User.findOne({ email });
+    const userExist = await User.findOne({ username });
     if (userExist) {
       return res
         .status(400)
-        .json({ message: "El usuario ya existe intenta ingresar" });
+        .json({ message: "El nombre deusuario ya existe intenta ingresar" });
     }
 
     const salt = await bcrypt.genSalt(10);
@@ -29,6 +32,8 @@ const registerUser = async (req, res) => {
       username,
       email,
       password: hashedPassword,
+      cellPhone,
+      Age
     });
 
     await newUser.save();
