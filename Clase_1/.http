@@ -1,9 +1,9 @@
-### Metodo POST crear usuario
-post http://localhost:5000/api/auth/register
+### Metodo POST para crear un usuario
+POST http://localhost:5000/api/auth/register
 Content-Type: application/json
 
 {
-    "username": "axel",
-    "email": "axel@example.com",
-    "password": "123456"
+  "username": "Hector",
+  "email": "hector@example.com",
+  "password": "987654"
 }
