@@ -24,12 +24,12 @@ const userSchema = new Schema({
     minlength: 6,
   },
   cellPhone: {
-    type: cellPhone,
+    type: Int32, //Son numeros
     required: true,
-    minlength: 10,
   },
   Age: {
-    type: Number,
+    type: Int32,
+    required: true,
     min: 20,
     max: 60,
   },

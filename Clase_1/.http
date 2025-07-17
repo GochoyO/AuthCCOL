@@ -6,6 +6,6 @@ Content-Type: application/json
   "username": "Teresa",
   "email": "teresa@example.com",
   "password": "696969",
-  "cellPhone": "1234567890",
+  "cellPhone": 5541432963,
   "Age": 30
 }

@@ -5,9 +5,9 @@ const User = require("../models/users");
 const bcrypt = require("bcryptjs"); //Seguridad en las contraseñas
 
 const registerUser = async (req, res) => {
-  const { username, email, password } = req.body;
+  const { username, email, password, cellPhone, Age } = req.body;
 
-  if (!username || !email || !password) {
+  if (!username || !email || !password || !cellPhone || !Age) {
     return res.status(400).json({ message: "Todos los campos son requeridos" });
   }
 
