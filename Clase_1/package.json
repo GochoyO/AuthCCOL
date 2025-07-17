@@ -21,10 +21,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GochoyO/AutenticaClase.git"
+    "url": "git+https://github.com/GochoyO/AuthCCOL.git"
   },
   "bugs": {
-    "url": "https://github.com/GochoyO/AutenticaClase/issues"
+    "url": "https://github.com/GochoyO/AuthCCOL/issues"
   },
-  "homepage": "https://github.com/GochoyO/AutenticaClase#readme"
+  "homepage": "https://github.com/GochoyO/AuthCCOL#readme"
 }

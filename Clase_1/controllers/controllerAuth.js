@@ -1,3 +1,5 @@
+// Clase_1/controllers/controllerAuth.js
+// Controlador para manejar la autenticación de usuarios
 const mongoose = require("mongoose");
 const User = require("../models/users");
 const bcrypt = require("bcryptjs"); //Seguridad en las contraseñas

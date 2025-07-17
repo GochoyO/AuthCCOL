@@ -1,3 +1,5 @@
+// Clase_1/config/db.js
+
 const mongoose = require("mongoose");
 require("dotenv").config();
 const MONGO_URI = process.env.MONGO_URI;

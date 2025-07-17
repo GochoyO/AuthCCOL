@@ -1,3 +1,7 @@
+// Clase_1/models/users.js
+// This file defines the User model for a MongoDB database using Mongoose.
+// It includes fields for username, email, password, cell phone number, and age.
+// Each field has specific validation rules such as required, unique, and minimum/maximum values.
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
@@ -19,9 +23,15 @@ const userSchema = new Schema({
     required: true,
     minlength: 6,
   },
-  createdAt: {
-    type: Date,
-    default: Date.now,
+  cellPhone: {
+    type: cellPhone,
+    required: true,
+    minlength: 10,
+  },
+  Age: {
+    type: Number,
+    min: 20,
+    max: 60,
   },
 });
 

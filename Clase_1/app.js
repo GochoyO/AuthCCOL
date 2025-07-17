@@ -1,3 +1,6 @@
+// Clase_1/app.js
+// Este archivo es el punto de entrada de nuestra aplicación Express
+// Importamos las dependencias necesarias y configuramos la aplicación
 const express = require("express");
 const connectDB = require("./config/db");
 require("dotenv").config();
