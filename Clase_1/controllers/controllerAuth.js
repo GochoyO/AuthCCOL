@@ -7,8 +7,11 @@ const bcrypt = require("bcryptjs"); //Seguridad en las contraseñas
 const registerUser = async (req, res) => {
   const { username, email, password, cellPhone, Age } = req.body;
 
-  if (!username || !email || !password || !cellPhone || !Age) {
+  if (!username || !email || !password) {
     return res.status(400).json({ message: "Todos los campos son requeridos" });
+  }
+  if (!cellPhone || !Age) {
+    return res.status(400).json({ message: "Debe ingresar un numero de celular y la edad" });
   }
 
   try {
@@ -33,7 +36,7 @@ const registerUser = async (req, res) => {
       .status(201)
       .json({ message: "El usuario se registro correctamente" });
   } catch (err) {
-    return res.status(500).json({ message: "Error en el servidor" });
+    return res.status(500).json({ message: "Error en el servidor ...paso" + err.message });
   }
 };
 

@@ -6,6 +6,8 @@ Content-Type: application/json
   "username": "Teresa",
   "email": "teresa@example.com",
   "password": "696969",
-  "cellPhone": "5541432960",
-  "Age": "25"
-}
+  "cellPhone": 5541432960,
+  "Age": 25
+  }
+
+### Metodo POST para iniciar sesión

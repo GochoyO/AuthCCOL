@@ -21,15 +21,17 @@ const userSchema = new Schema({
   password: {
     type: String,
     required: true,
-    minlength: 6,
+    minlength: 6
   },
   cellPhone: {
-    type: String,
-    required: true,
+    type: Number,
+    required: false,
+    min: 1000000000,
+    max: 9999999999
   },
   Age: {
-    type: String,
-    required: true,
+    type: Number,
+    required: false,
     min: 20,
     max: 60,
   },
