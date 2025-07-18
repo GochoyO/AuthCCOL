@@ -3,11 +3,11 @@ POST http://localhost:5000/api/auth/register
 Content-Type: application/json
 
 {
-  "username": "Joselo",
-  "email": "joselo@example.com",
-  "password": "686870",
-  "cellPhone": 9943398101,
-  "Age": 30
+  "username": "Madelein",
+  "email": "madelein@example.com",
+  "password": "339993",
+  "cellPhone": 9913368741,
+  "Age": 27
 }
 
 ### Metodo POST para iniciar sesión

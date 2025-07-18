@@ -1,18 +1,21 @@
 ### Metodo POST crear usuario
 post http://localhost:5000/api/auth/register
 Content-Type: application/json
-
 {
-    "username": "axel",
-    "email": "axel@example.com",
-    "password": "123456"
+  "username": "Joselo",
+  "email": "joselo@example.com",
+  "password": "686870",
+  "cellPhone": 9943398101,
+  "Age": 30
 }
+
 
 ### Metodo POST validacion de usuario y generar JWT
 post http://localhost:5000/api/auth/login
 Content-Type: application/json
 
-{
-    "email": "axel@example.com",
-    "password": "123456"
-}
+//{ "username": "Madelein", "password": "339993"}
+//{ "username": "Joselo", "password": "686870"}
+//{ "username": "Gonzalo", "password": "181818"}
+{ "username": "Hector","password": "101479"}
+
